@@ -574,7 +574,7 @@ EOF
 "disable_udp": false
 },
 "socks5": {
-"listen": "127.0.0.1:10808",
+"listen": "127.0.0.1:1080",
 "timeout": 300,
 "disable_udp": false
 },
@@ -585,8 +585,8 @@ EOF
 "mmdb": "acl/Country.mmdb",
 "server_name": "${domain}",
 "insecure": true,
-"recv_window_conn": ${r_conn},
-"recv_window": ${r_client},
+"recv_window_conn": 196608,
+"recv_window": 491520,
 "disable_mtu_discovery": true,
 "resolver": "https://223.5.5.5/dns-query",
 "retry": 3,
@@ -617,7 +617,7 @@ EOF
 "disable_udp": false
 },
 "socks5": {
-"listen": "127.0.0.1:10808",
+"listen": "127.0.0.1:1080",
 "timeout": 300,
 "disable_udp": false
 },
@@ -628,8 +628,8 @@ EOF
 "auth_str": "${auth_str}",
 "server_name": "${domain}",
 "insecure": false,
-"recv_window_conn": ${r_conn},
-"recv_window": ${r_client},
+"recv_window_conn": 196608,
+"recv_window": 491520,
 "disable_mtu_discovery": true,
 "resolver": "https://223.5.5.5/dns-query",
 "retry": 3,
@@ -652,8 +652,8 @@ EOF
 ${server_auth_conf}
 "alpn": "h3",
 "acl": "/etc/hihy/acl/hihyServer.acl",
-"recv_window_conn": ${r_conn},
-"recv_window_client": ${r_client},
+"recv_window_conn": 196608,
+"recv_window_client": 491520,
 "max_conn_client": 4096,
 "resolve_preference": "46",
 "disable_mtu_discovery": true
@@ -683,8 +683,8 @@ EOF
 ${server_auth_conf}
 "alpn": "h3",
 "acl": "/etc/hihy/acl/hihyServer.acl",
-"recv_window_conn": ${r_conn},
-"recv_window_client": ${r_client},
+"recv_window_conn": 196608,
+"recv_window_client": 491520,
 "max_conn_client": 4096,
 "resolve_preference": "46",
 "disable_mtu_discovery": true
@@ -703,7 +703,7 @@ EOF
 "disable_udp": false
 },
 "socks5": {
-"listen": "127.0.0.1:10808",
+"listen": "127.0.0.1:1080",
 "timeout": 300,
 "disable_udp": false
 },
@@ -714,8 +714,8 @@ EOF
 "auth_str": "${auth_str}",
 "server_name": "${domain}",
 "insecure": false,
-"recv_window_conn": ${r_conn},
-"recv_window": ${r_client},
+"recv_window_conn": 196608,
+"recv_window": 491520,
 "disable_mtu_discovery": true,
 "resolver": "https://223.5.5.5/dns-query",
 "retry": 3,
